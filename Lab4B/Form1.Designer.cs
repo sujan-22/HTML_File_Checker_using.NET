@@ -36,8 +36,8 @@
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.processToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkTagsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.fileStatusLabel = new System.Windows.Forms.Label();
+            this.htmlTagsListBox = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(11, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(437, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(394, 33);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -92,7 +92,7 @@
             this.processToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 33);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(437, 31);
+            this.menuStrip2.Size = new System.Drawing.Size(394, 31);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -115,37 +115,37 @@
             this.checkTagsToolStripMenuItem.Text = "Check Tags";
             this.checkTagsToolStripMenuItem.Click += new System.EventHandler(this.checkTagsToolStripMenuItem_Click);
             // 
-            // label1
+            // fileStatusLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 23);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "No File Loaded";
+            this.fileStatusLabel.AutoSize = true;
+            this.fileStatusLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fileStatusLabel.Location = new System.Drawing.Point(23, 80);
+            this.fileStatusLabel.Name = "fileStatusLabel";
+            this.fileStatusLabel.Size = new System.Drawing.Size(135, 23);
+            this.fileStatusLabel.TabIndex = 5;
+            this.fileStatusLabel.Text = "No File Loaded";
             // 
-            // listBox1
+            // htmlTagsListBox
             // 
-            this.listBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.ListItem;
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.HorizontalScrollbar = true;
-            this.listBox1.ItemHeight = 23;
-            this.listBox1.Location = new System.Drawing.Point(27, 121);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.ScrollAlwaysVisible = true;
-            this.listBox1.Size = new System.Drawing.Size(383, 368);
-            this.listBox1.TabIndex = 6;
+            this.htmlTagsListBox.AccessibleRole = System.Windows.Forms.AccessibleRole.ListItem;
+            this.htmlTagsListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.htmlTagsListBox.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.htmlTagsListBox.FormattingEnabled = true;
+            this.htmlTagsListBox.HorizontalScrollbar = true;
+            this.htmlTagsListBox.ItemHeight = 23;
+            this.htmlTagsListBox.Location = new System.Drawing.Point(27, 121);
+            this.htmlTagsListBox.Name = "htmlTagsListBox";
+            this.htmlTagsListBox.ScrollAlwaysVisible = true;
+            this.htmlTagsListBox.Size = new System.Drawing.Size(360, 322);
+            this.htmlTagsListBox.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 544);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(394, 453);
+            this.Controls.Add(this.htmlTagsListBox);
+            this.Controls.Add(this.fileStatusLabel);
             this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -173,8 +173,8 @@
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem processToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkTagsToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label fileStatusLabel;
+        private System.Windows.Forms.ListBox htmlTagsListBox;
     }
 }
 
